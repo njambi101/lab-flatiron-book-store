@@ -43,5 +43,27 @@ const bookStore = {
     ]
 }
 
-// Write your code here!
+const bookStoreTitle = document.getElementById('header').textContent = bookStore.name;
+
+const listContainer = document.getElementById('delete-this')
+ bookStore.books.forEach(bookContainer => {
+    const li = document.createElement('li');
+
+    li.textContent =bookContainer;
+    listContainer.appendChild(li)
+    
+ });
+ const bookTitle = bookStore.books.title;
+     bookTitle.forEach(bookTitle=>{
+    const h3 = document.getElementById('h3');
+    h3.textContent =bookTitle;
+    listContainer.appendChild(h3)
+ })
+
+ const bookauthor = bookStore.books.author;
+bookauthor.forEach(bookauthor=>{
+    const p = document.getElementById('p');
+    p.textContent = 'bookauthor'
+    listContainer.appendChild(p)
+})
 
